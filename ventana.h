@@ -19,11 +19,13 @@ private:
     void procesarEventos();
     void renderizar();
     void cargarRecursos();
+    bool botoneraVisible();
     sf::Font fuenteBotonera;
 
     sf::Texture texturaFondo;
     sf::Sprite spriteFondo;
     Botonera botonera;
+
 
 
     // Atributo principal de SFML

@@ -412,14 +412,14 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1781324848 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventana.cpp
+1781326025 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventana.cpp
 	"ventana.h"
 	"datosVentana.h"
 	"botonera.h"
 	"datosBotonera.h"
 	<iostream>
 
-1781324659 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventana.h
+1781326043 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventana.h
 	"botonera.h"
 	<SFML/Graphics.hpp>
 	<string>
