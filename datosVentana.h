@@ -1,4 +1,4 @@
-// datosVentana.h
+
 #ifndef DATOS_VENTANA_H
 #define DATOS_VENTANA_H
 
