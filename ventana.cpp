@@ -2,6 +2,8 @@
 #include "datosVentana.h"
 #include "botonera.h"
 #include "datosBotonera.h"
+#include "VentanaExplorar.h"
+#include "datosVentExplorar.h"
 
 #include <iostream>
 
@@ -17,6 +19,12 @@ Ventana::Ventana(unsigned int ancho, unsigned int alto, const std::string& titul
 
 
 }
+/*
+bool Ventana::botoneraVisible()
+{
+    return true; // o la lógica que corresponda
+}
+*/
 void Ventana::cargarRecursos()
 {
     if (!texturaFondo.loadFromFile(RUTA_FONDO))
@@ -109,6 +117,16 @@ void Ventana::renderizar()
     botonera.draw(m_ventana);
     m_ventana.display();
 }
+void Ventana::abrirExplorar()
+{
+    VentanaExplorar ventanaExplorar(TITULO,EXPLICACION);
+    bool respuesta = ventanaExplorar.mostrar(m_ventana);
+    if (respuesta)
+    {
+        m_ventana.close();
+    }
+}
+
 void Ventana::ejecutarAccion(int eleccion)
 {
     switch (eleccion)
@@ -117,7 +135,7 @@ void Ventana::ejecutarAccion(int eleccion)
         std::cout << eleccion <<std::endl;
         break;
     case 1:
-        std::cout << eleccion <<std::endl;
+        abrirExplorar();
         break;
     case 2:
         std::cout << eleccion <<std::endl;

@@ -54,7 +54,9 @@ void Botonera::igualarBotones(sf::Color color,sf::Color color2)
     {
         botones[i].setFillColor(sf::Color(color));
         //textoBotones[i].setColor(sf::Color::Blue);
-        textoBotones[i].setColor(sf::Color(color2));
+        textoBotones[i].setFillColor(sf::Color(color2));
+
+        //textoBotones[i].setColor(sf::Color(color2));
     }
 }
 
@@ -99,24 +101,32 @@ void Botonera::setEtiqueta(int i, const std::string& texto)
     }
 }
 
-void Botonera::inicializarBotones(float x, float y)
+void Botonera::inicializarBotones(float x, float y, bool horiz)
 {
+    for (int i = 0; i < cantidad; i++)
+    {
+        if (horiz)
+            botones[i].setPosition(x + i * (anchoRect + 10.f), y); // desplazamiento horizontal
+        else
+            botones[i].setPosition(x, y + i * (altoRect + 10.f));  // desplazamiento vertical
+    }
 
     for (int i = 0; i < cantidad; i++)
     {
-        botones[i].setPosition(x, y + i * 60.f);
+        sf::FloatRect bounds = textoBotones[i].getLocalBounds();
+
+        float xTexto, yTexto;
+
+        if (horiz) {
+            xTexto = botones[i].getPosition().x + (anchoRect - bounds.width) / 2.f - bounds.left;
+            yTexto = botones[i].getPosition().y + (altoRect - bounds.height) / 2.f - bounds.top;
+        } else {
+            xTexto = botones[i].getPosition().x + (anchoRect - bounds.width) / 2.f - bounds.left;
+            yTexto = botones[i].getPosition().y + (altoRect - bounds.height) / 2.f - bounds.top;
+        }
+
+        textoBotones[i].setPosition(xTexto, yTexto);
     }
-    sf::FloatRect bounds =textoBotones->getLocalBounds();
-
-    float xTexto = x+10 ;//+ (anchoRect - bounds.width) / 2.f - bounds.left;
-    float yTexto = y + (altoRect - bounds.height) / 2.f - bounds.top;
-
-    for (int i = 0; i < cantidad; i++)
-    {
-        //textoBotones[i].setPosition(x+5, y + i * 60.f);
-        textoBotones[i].setPosition(xTexto, yTexto + i* 60.f);
-    }
-
 }
 
 void Botonera::draw(sf::RenderWindow& ventana)

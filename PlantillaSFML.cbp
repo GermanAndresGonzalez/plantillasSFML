@@ -5,7 +5,7 @@
 		<Option title="PlantillaSFML" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
-		<Option virtualFolders="Menu/" />
+		<Option virtualFolders="Menu/;Ventana/;ArchivosDatos/" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/PlantillaSFML" prefix_auto="1" extension_auto="1" />
@@ -40,6 +40,12 @@
 			<Add library="sfml-system" />
 			<Add directory="SFML/lib" />
 		</Linker>
+		<Unit filename="VentanaExplorar.cpp">
+			<Option virtualFolder="Ventana/" />
+		</Unit>
+		<Unit filename="VentanaExplorar.h">
+			<Option virtualFolder="Ventana/" />
+		</Unit>
 		<Unit filename="botonera.cpp">
 			<Option virtualFolder="Menu/" />
 		</Unit>
@@ -47,16 +53,30 @@
 			<Option virtualFolder="Menu/" />
 		</Unit>
 		<Unit filename="datosBotonera.cpp">
-			<Option virtualFolder="Menu/" />
+			<Option virtualFolder="ArchivosDatos/" />
 		</Unit>
 		<Unit filename="datosBotonera.h">
-			<Option virtualFolder="Menu/" />
+			<Option virtualFolder="ArchivosDatos/" />
 		</Unit>
-		<Unit filename="datosVentana.cpp" />
-		<Unit filename="datosVentana.h" />
+		<Unit filename="datosVentExplorar.cpp">
+			<Option virtualFolder="ArchivosDatos/" />
+		</Unit>
+		<Unit filename="datosVentExplorar.h">
+			<Option virtualFolder="ArchivosDatos/" />
+		</Unit>
+		<Unit filename="datosVentana.cpp">
+			<Option virtualFolder="ArchivosDatos/" />
+		</Unit>
+		<Unit filename="datosVentana.h">
+			<Option virtualFolder="ArchivosDatos/" />
+		</Unit>
 		<Unit filename="main.cpp" />
-		<Unit filename="ventana.cpp" />
-		<Unit filename="ventana.h" />
+		<Unit filename="ventana.cpp">
+			<Option virtualFolder="Ventana/" />
+		</Unit>
+		<Unit filename="ventana.h">
+			<Option virtualFolder="Ventana/" />
+		</Unit>
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

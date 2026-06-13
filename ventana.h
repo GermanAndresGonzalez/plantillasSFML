@@ -12,6 +12,7 @@ public:
 
     // Bucle principal que mantiene la ventana con vida
     void ejecutar();
+    void abrirExplorar();
     void ejecutarAccion(int eleccion);
 
 private:
@@ -19,7 +20,7 @@ private:
     void procesarEventos();
     void renderizar();
     void cargarRecursos();
-    bool botoneraVisible();
+    //bool botoneraVisible();
     sf::Font fuenteBotonera;
 
     sf::Texture texturaFondo;

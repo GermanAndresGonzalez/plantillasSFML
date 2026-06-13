@@ -30,6 +30,7 @@ public:
     void resaltarBoton(int n,sf::Color color,sf::Color color2);
     void igualarBotones(sf::Color color,sf::Color color2);
 
+
     void inicializarRectangulos(float ancho, float alto);
     const sf::FloatRect obtPosicion(int i) const;
 
@@ -43,7 +44,7 @@ public:
 
 
     void setEtiqueta(int i, const std::string& texto);
-    void inicializarBotones(float x, float y);
+    void inicializarBotones(float x, float y, bool horiz=false);
     void draw(sf::RenderWindow& ventana);
 };
 

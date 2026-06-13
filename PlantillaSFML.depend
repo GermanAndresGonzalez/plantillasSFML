@@ -412,35 +412,60 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1781326025 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventana.cpp
+1781367424 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventana.cpp
 	"ventana.h"
 	"datosVentana.h"
 	"botonera.h"
 	"datosBotonera.h"
+	"VentanaExplorar.h"
+	"datosVentExplorar.h"
 	<iostream>
 
-1781326043 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventana.h
+1781367415 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventana.h
 	"botonera.h"
 	<SFML/Graphics.hpp>
 	<string>
 
-1781280229 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\datosventana.h
+1781364350 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\datosventana.h
 
 1781277113 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\datosventana.cpp
 	"datosVentana.h"
 
-1781324100 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\botonera.cpp
+1781371128 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\botonera.cpp
 	"botonera.h"
 	<iostream>
 
-1781324099 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\botonera.h
+1781370006 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\botonera.h
 	<SFML/Graphics.hpp>
 	<string>
 
-1781324259 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\datosbotonera.cpp
+1781371365 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\datosbotonera.cpp
 	"datosBotonera.h"
 
-1781321493 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\datosbotonera.h
+1781364350 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\datosbotonera.h
 	<SFML/Graphics.hpp>
 	<string>
+
+1781061452 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventanaconfirmacion.h
+	<SFML/Graphics.hpp>
+
+1781222081 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventanaconfirmacion.cpp
+	"VentanaConfirmacion.h"
+	<iostream>
+
+1781373100 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\datosventexplorar.cpp
+	"datosVentExplorar.h"
+
+1781372805 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\datosventexplorar.h
+	<SFML/Graphics.hpp>
+
+1781372227 c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventanaexplorar.h
+	"botonera.h"
+	<SFML/Graphics.hpp>
+
+1781373147 source:c:\users\tradu\downloads\emule\incoming\pruebascpp\temporal\plantillasfml\ventanaexplorar.cpp
+	"VentanaExplorar.h"
+	"botonera.h"
+	"datosVentExplorar.h"
+	<iostream>
 
